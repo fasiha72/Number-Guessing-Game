@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #8cbcff, #b8d4ff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+
+.game-container {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 30px 40px;
+    border-radius: 15px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    width: 350px;
+}
+
+.game-container h1 {
+    margin-bottom: 15px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+
+#guessInput {
+    width: 80%;
+    padding: 12px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 15px;
+    transition: .3s ease;
+}
+
+#guessInput:focus {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #fff;
+    color: #333;
+    font-weight: 600;
+    transition: .3s;
+    margin-top: 10px;
+}
+
+#checkButton:hover {
+    background: #00e9ff;
+    color: #000;
+}
+
+#restartButton {
+    background: #ffeb3b;
+    color: #000;
+}
+
+#restartButton:hover {
+    background: #ffe600;
+}
+
+#result {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media (max-width: 480px) {
+    .game-container {
+        padding: 20px 25px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    #guessInput {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    #result {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .game-container {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .game-container {
+        width: 350px;
+    }
+}
